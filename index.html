@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitness Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="https://img.icons8.com/fluency/48/dumbbell.png" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>
+        <img src="https://img.icons8.com/fluency/48/dumbbell.png" alt="logo" class="logo">
+        Fitness Tracker
+        <img src="https://img.icons8.com/ios-filled/50/heart-with-pulse.png" class="logo" alt="pulse">
+        <img src="https://img.icons8.com/color/48/running.png" class="logo" alt="running">
+        <img src="https://img.icons8.com/fluency/48/fitness.png" class="logo" alt="fitness">
+      </h1>
+    </header>
+
+    <div class="section">
+      <h2>Log Workout</h2>
+      <input type="text" id="exerciseName" placeholder="Exercise name">
+      <input type="number" id="caloriesBurned" placeholder="Calories burned">
+      <button onclick="addWorkout()">Add Workout</button>
+    </div>
+
+    <div class="section">
+      <h2>Daily Workouts</h2>
+      <ul id="workoutList"></ul>
+    </div>
+
+    <div class="section">
+      <h2>Weekly Summary</h2>
+      <p>Total Calories Burned: <strong><span id="totalCalories">0</span> cal</strong></p>
+    </div>
+
+    <div class="section">
+      <h2>Goal Tracker</h2>
+      <input type="number" id="goalInput" placeholder="Set weekly goal (cal)">
+      <div class="progress-bar">
+        <div class="progress" id="progressBar">0%</div>
+      </div>
+      <p id="goalText">0% of 0 cal goal</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
